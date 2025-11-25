@@ -17,7 +17,7 @@ pipeline {
         stage('Test') {
             steps {
                 // Option A: module name
-                bat 'C:\\Users\\USER\\anaconda3\\python.exe -m unittest test_atm'
+                bat 'C:\\Users\\USER\\anaconda3\\python.exe -m unittest test_atm.py'
 
                 // OR Option B (discovery, if you add more tests later):
                 // bat 'C:\\Users\\USER\\anaconda3\\python.exe -m unittest discover -p "test_*.py"'
